@@ -2,4 +2,6 @@
 A small react-redux-webpack project
 
 ## Run
-`npm run` :D
+`npm install`
+`npm run`
+:D
