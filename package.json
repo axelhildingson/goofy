@@ -1,0 +1,38 @@
+{
+  "name": "goofy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --debug",
+    "start": "webpack-dev-server"
+  },
+  "author": "Axel Hildingson",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^15.5.3",
+    "react-bootstrap": "^0.30.8",
+    "react-dom": "^15.5.3",
+    "react-highlight-words": "^0.6.0",
+    "react-redux": "^5.0.3",
+    "react-select": "^1.0.0-rc.3",
+    "redux": "^3.6.0",
+    "webpack-dev-server": "^2.4.2",
+    "word-list-json": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.3.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.3.3"
+  }
+}

@@ -1,0 +1,6 @@
+.main {
+    min-width: 200px;
+    max-width: 400px;
+    flex-basis: auto;
+    flex-grow: 1;
+}
