@@ -1,5 +1,5 @@
-import React, {Component, PropTypes} from 'react';
-import { Well, Panel, Image } from 'react-bootstrap';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { result as Actions } from '../../actions/result';
 
@@ -7,10 +7,9 @@ import { result as Actions } from '../../actions/result';
 export class Result extends Component {
     static propTypes = {
         showResult: PropTypes.bool,
-        value: PropTypes.object,
-        result: PropTypes.arrayOf(PropTypes.string),
-         dispatch: PropTypes.func,
-
+        searchquery: PropTypes.string,
+        result: PropTypes.arrayOf(PropTypes.object),
+        dispatch: PropTypes.func,
     }
 
     constructor(props) {
@@ -50,7 +49,7 @@ const mapStateToProps = (state) => {
     return {
         showResult: state.result.showResult,
         result: state.result.result,
-        value: state.result.value,
+        searchquery: state.result.searchquery,
     };
 };
 

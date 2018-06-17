@@ -2,6 +2,7 @@
 A small react-redux-webpack project
 
 ## Run
- - `npm install`
- - `npm run`
- - :D
+
+1. Start mock server with `npm run mockserver:start`
+2. build project `npm run build`
+3. start server `npm run server:start`

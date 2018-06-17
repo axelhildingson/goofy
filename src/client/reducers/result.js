@@ -1,22 +1,20 @@
-import { result as Actions } from '../actions';
-
 const defaultState = {
     showResult: false,
 };
 
 const result = (state = defaultState, action) => {
     switch (action.type) {
-        case 'SHOW_RESULT': {
-            return Object.assign({}, state, {
-                showResult: true,
-                value: action.value,
-                result: action.result,
-            });
-            return state;
-        }
-        case 'CLOSE_RESULT': {
+        case 'REQUEST_RESULT': {
             return Object.assign({}, state, {
                 showResult: false,
+                searchquery: action.searchquery
+            });
+        }
+        case 'RECEIVE_RESULT': {
+            return Object.assign({}, state, {
+                showResult: true,
+                searchquery: action.searchquery,
+                result: action.result,
             });
         }
         default: {
