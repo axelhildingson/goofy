@@ -4,10 +4,11 @@ import styles from './styles.css';
 import { connect } from 'react-redux';
 import {result as resultActions } from '../../actions';
 
-export class search extends Component {
+class search extends Component {
 
     static propTypes = {
         dispatch: PropTypes.func,
+        searchquery: PropTypes.string,
     }
 
     constructor(props) {
@@ -37,6 +38,11 @@ export class search extends Component {
     }
 }
 
+const mapStateToProps = (state) => {
+    return {
+        value: state.result.searchquery,
+    };
+};
 
 const mapDispatchToProps = (dispatch) => {
     return {
@@ -44,4 +50,4 @@ const mapDispatchToProps = (dispatch) => {
     };
 };
 
-export default connect(mapDispatchToProps)(search);
+export default connect(mapStateToProps, mapDispatchToProps)(search);

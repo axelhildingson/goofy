@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { result as Actions } from '../../actions/result';
 
 
-export class Result extends Component {
+class Result extends Component {
     static propTypes = {
         showResult: PropTypes.bool,
         searchquery: PropTypes.string,

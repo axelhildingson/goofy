@@ -12,7 +12,7 @@ export default class StartView extends Component {
         <Search />
         </div>
         <div className={styles.container}>
-        <Result showResult={false} />
+        <Result />
         </div>
       </div>
     );
